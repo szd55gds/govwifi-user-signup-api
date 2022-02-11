@@ -2,7 +2,7 @@
 
 set -v -e -u -o pipefail
 
-source deploy-tools/aws-helpers.sh
+source ci/tasks/scripts/deploy-tools/aws-helpers.sh
 
 function migrate() {
   local migration_command="bundle exec rake db:migrate"
